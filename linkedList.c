@@ -6,8 +6,6 @@ int data;
 struct Node*next
 }
 struct Node*head;
-
-
 // insert a node in a LinkedList // 
 void insert(int data){
 struct Node*firstNode = (struct Node*)malloc(sizeof(struct Node));
