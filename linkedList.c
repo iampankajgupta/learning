@@ -32,6 +32,21 @@ struct Node*iterate = head;
   }
   printf("%i",iterate->data);
 }
+// deletion of elements in a linkedlist// 
+void delete(int n ){
+  struct Node*first = head;
+  struct Node*second = first;
+if (n==1){
+head = head->next;
+  return;
+}
+ for (int i = 0;i<(n-2);i++){
+ second  = second->next;
+   first->next = second;
+   free(second);
+ }
+  
+}
 int main (){
 head = NULL;
 insert(1);
